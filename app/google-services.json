@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "719450200397",
+    "project_id": "tmsauce-ca098",
+    "storage_bucket": "tmsauce-ca098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719450200397:android:08eb11709c207af10d7f04",
+        "android_client_info": {
+          "package_name": "com.example.tmsauce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719450200397-da6u7nh7pvj2hdrva3v07bc32djnb9pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9S3WUP4sijJ3ygedGGJRehNOuBCtv91E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "719450200397-da6u7nh7pvj2hdrva3v07bc32djnb9pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
