@@ -1,2 +1,3 @@
+![version](https://img.shields.io/badge/version-1.0.0-blue)
 ![build](http://img.shields.io/badge/build-passing-success.png)
-![codecoverage](http://img.shields.io/badge/codecoverage-13.9%-error.png)
+![coverage](https://img.shields.io/badge/codecoverage-13%25-red)
