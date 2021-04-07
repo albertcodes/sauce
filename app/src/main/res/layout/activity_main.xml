@@ -7,6 +7,8 @@
     android:background="@drawable/background3"
     tools:context=".MainActivity">
 
+<!--    © TMSauce  Android   Application     -->
+
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="200dp"
