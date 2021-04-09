@@ -14,7 +14,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/color</item>
         <!-- Customize your theme here. -->
 
-        <!-- Support dispalay cutout (Tested in Xiaomi MI8) -->
+        <!-- Support display cutout (Tested in Xiaomi MI8) -->
         <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
