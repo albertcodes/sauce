@@ -68,7 +68,10 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Password is Required", Toast.LENGTH_SHORT).show();
             }
             else {
-                Toast.makeText(this, " Done", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, " Done", Toast.LENGTH_SHORT).show();
+                val intent = Intent(this, VerificationActivity::class.java).apply{
+                }
+                startActivity(intent)
             }
         }
 
