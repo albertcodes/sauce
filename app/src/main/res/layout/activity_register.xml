@@ -36,7 +36,7 @@
             android:layout_marginTop="40dp"
             android:text="Create Account"
             android:fontFamily="@font/diablo_std_regular"
-            android:textSize="28sp"
+            android:textSize="26sp"
             android:textAlignment="center"
             android:textColor="@color/black"
             />
@@ -53,13 +53,14 @@
             android:hint="Name"
             android:paddingHorizontal="20dp"
             android:fontFamily="@font/sf_ui_display_black"
+            android:textSize="16sp"
             />
 
         <ImageView
             android:id="@+id/name_icon_register"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/account_icon"
+            android:src="@drawable/account_icon_round"
             android:layout_marginTop="122dp"
             android:layout_marginLeft="308dp"
             />
@@ -76,13 +77,14 @@
             android:hint="Phone Number"
             android:paddingHorizontal="20dp"
             android:fontFamily="@font/sf_ui_display_black"
+            android:textSize="16sp"
             />
 
         <ImageView
             android:id="@+id/phonenumber_icon_register"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/phone_icon"
+            android:src="@drawable/phone_icon_round"
             android:layout_marginTop="198dp"
             android:layout_marginLeft="308dp"
             />
@@ -99,13 +101,14 @@
             android:hint="Password"
             android:paddingHorizontal="20dp"
             android:fontFamily="@font/sf_ui_display_black"
+            android:textSize="16sp"
             />
 
         <ImageView
             android:id="@+id/password_icon_register"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/password_icon"
+            android:src="@drawable/password_icon_round"
             android:layout_marginTop="273dp"
             android:layout_marginLeft="308dp"
             />
@@ -140,7 +143,7 @@
             android:fontFamily="@font/sf_ui_display_regular"
             android:textAllCaps="false"
             android:textColor="@color/blue"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
             />
