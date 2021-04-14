@@ -41,8 +41,6 @@ class RegisterActivity : AppCompatActivity() {
         val inputPhoneNumber = findViewById(R.id.phonenumber_register) as EditText
         val inputPassword = findViewById(R.id.password_register) as EditText
 
-        lateinit var string: String
-
         // set on-click listener
         backToLoginButton.setOnClickListener {
             // Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
