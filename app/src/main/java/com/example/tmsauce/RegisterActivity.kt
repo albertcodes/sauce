@@ -28,6 +28,8 @@ import com.google.android.gms.tasks.Task;
 //import com.google.firebase.database.ValueEventListener;
 
 class RegisterActivity : AppCompatActivity() {
+
+//    private lateinit var fireAuthListener: FirebaseAuth.AuthStateListener
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,11 +37,11 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         // get references
-        val backToLoginButton = findViewById(R.id.back_to_login_button) as Button
-        val signUpButton = findViewById(R.id.signup_button) as Button
-        val inputName = findViewById(R.id.name_register) as EditText
-        val inputPhoneNumber = findViewById(R.id.phonenumber_register) as EditText
-        val inputPassword = findViewById(R.id.password_register) as EditText
+        val backToLoginButton = findViewById<Button>(R.id.back_to_login_button)
+        val signUpButton = findViewById<Button>(R.id.signup_button)
+        val inputName = findViewById<EditText>(R.id.name_register)
+        val inputPhoneNumber = findViewById<EditText>(R.id.phonenumber_register)
+        val inputPassword = findViewById<EditText>(R.id.password_register)
 
         // set on-click listener
         backToLoginButton.setOnClickListener {
@@ -68,6 +70,13 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Password is Required", Toast.LENGTH_SHORT).show();
             }
             else {
+                val options = PhoneAuthOptions.newBuilder(auth)
+                    .setPhoneNumber(phone)       // Phone number to verify
+                    .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                    .setActivity(this)                 // Activity (for callback binding)
+                    .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
+                    .build()
+                PhoneAuthProvider.verifyPhoneNumber(options)
 //                Toast.makeText(this, " Done", Toast.LENGTH_SHORT).show();
                 val intent = Intent(this, VerificationActivity::class.java).apply{
                 }
