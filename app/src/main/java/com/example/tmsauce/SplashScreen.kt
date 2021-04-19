@@ -1,21 +1,19 @@
 package com.example.tmsauce
 
 import android.content.Intent
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import java.util.*
 
-
-public class MainActivity : AppCompatActivity() {
-
+class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splash_screen)
 
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                val intent = Intent(this@MainActivity, LoginActivity::class.java)
+                val intent = Intent(this@SplashScreen, RegisterActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -23,4 +21,3 @@ public class MainActivity : AppCompatActivity() {
 
     }
 }
-
