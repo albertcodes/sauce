@@ -29,8 +29,12 @@ import com.google.android.gms.tasks.Task;
 
 class RegisterActivity : AppCompatActivity() {
 
-//    private lateinit var fireAuthListener: FirebaseAuth.AuthStateListener
+    // [START declare_auth]
     private lateinit var auth: FirebaseAuth
+
+    private var storedVerificationId: String? = ""
+    private lateinit var resendToken: PhoneAuthProvider.ForceResendingToken
+    private lateinit var callbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +46,10 @@ class RegisterActivity : AppCompatActivity() {
         val inputName = findViewById<EditText>(R.id.name_register)
         val inputPhoneNumber = findViewById<EditText>(R.id.phonenumber_register)
         val inputPassword = findViewById<EditText>(R.id.password_register)
+
+        // [START initialize_auth]
+        // Initialize Firebase Auth
+//        auth = Firebase.auth
 
         // set on-click listener
         backToLoginButton.setOnClickListener {
